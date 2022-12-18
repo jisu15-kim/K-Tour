@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD728D6D294F5DF700DC69FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD728D6C294F5DF700DC69FB /* AppDelegate.swift */; };
+		CD728D6F294F5DF700DC69FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD728D6E294F5DF700DC69FB /* SceneDelegate.swift */; };
+		CD728D71294F5DF700DC69FB /* TourListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD728D70294F5DF700DC69FB /* TourListViewController.swift */; };
+		CD728D74294F5DF700DC69FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD728D72294F5DF700DC69FB /* Main.storyboard */; };
+		CD728D77294F5DF700DC69FB /* K_TourApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD728D75294F5DF700DC69FB /* K_TourApp.xcdatamodeld */; };
+		CD728D79294F5DF800DC69FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD728D78294F5DF800DC69FB /* Assets.xcassets */; };
+		CD728D7C294F5DF800DC69FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD728D7A294F5DF800DC69FB /* LaunchScreen.storyboard */; };
+		CD728D84294F5E1000DC69FB /* TourModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD728D83294F5E1000DC69FB /* TourModel.swift */; };
+		CD728D87294F5F7000DC69FB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CD728D86294F5F7000DC69FB /* Alamofire */; };
+		CD728D8C294F6C2E00DC69FB /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD728D8B294F6C2E00DC69FB /* Helper.swift */; };
+		CD728D8F294F6DEE00DC69FB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD728D8E294F6DEE00DC69FB /* NetworkManager.swift */; };
+		CD728D92294F6F9E00DC69FB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CD728D91294F6F9E00DC69FB /* Kingfisher */; };
+		CD728D96294F714B00DC69FB /* TourListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD728D94294F714B00DC69FB /* TourListCell.swift */; };
+		CD728D97294F714B00DC69FB /* TourListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD728D95294F714B00DC69FB /* TourListCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD728D69294F5DF700DC69FB /* K-TourApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "K-TourApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD728D6C294F5DF700DC69FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD728D6E294F5DF700DC69FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD728D70294F5DF700DC69FB /* TourListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListViewController.swift; sourceTree = "<group>"; };
+		CD728D73294F5DF700DC69FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD728D76294F5DF700DC69FB /* K_TourApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = K_TourApp.xcdatamodel; sourceTree = "<group>"; };
+		CD728D78294F5DF800DC69FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD728D7B294F5DF800DC69FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD728D7D294F5DF800DC69FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD728D83294F5E1000DC69FB /* TourModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourModel.swift; sourceTree = "<group>"; };
+		CD728D8B294F6C2E00DC69FB /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		CD728D8E294F6DEE00DC69FB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CD728D94294F714B00DC69FB /* TourListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListCell.swift; sourceTree = "<group>"; };
+		CD728D95294F714B00DC69FB /* TourListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourListCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD728D66294F5DF700DC69FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD728D92294F6F9E00DC69FB /* Kingfisher in Frameworks */,
+				CD728D87294F5F7000DC69FB /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD728D60294F5DF700DC69FB = {
+			isa = PBXGroup;
+			children = (
+				CD728D6B294F5DF700DC69FB /* K-TourApp */,
+				CD728D6A294F5DF700DC69FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD728D6A294F5DF700DC69FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD728D69294F5DF700DC69FB /* K-TourApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD728D6B294F5DF700DC69FB /* K-TourApp */ = {
+			isa = PBXGroup;
+			children = (
+				CD728D8D294F6C3600DC69FB /* Helper */,
+				CD728D6C294F5DF700DC69FB /* AppDelegate.swift */,
+				CD728D6E294F5DF700DC69FB /* SceneDelegate.swift */,
+				CD728D88294F5FE400DC69FB /* TourList */,
+				CD728D78294F5DF800DC69FB /* Assets.xcassets */,
+				CD728D7A294F5DF800DC69FB /* LaunchScreen.storyboard */,
+				CD728D7D294F5DF800DC69FB /* Info.plist */,
+				CD728D75294F5DF700DC69FB /* K_TourApp.xcdatamodeld */,
+			);
+			path = "K-TourApp";
+			sourceTree = "<group>";
+		};
+		CD728D88294F5FE400DC69FB /* TourList */ = {
+			isa = PBXGroup;
+			children = (
+				CD728D89294F601C00DC69FB /* Model */,
+				CD728D93294F712800DC69FB /* View */,
+				CD728D8A294F602200DC69FB /* Controller */,
+				CD728D72294F5DF700DC69FB /* Main.storyboard */,
+			);
+			path = TourList;
+			sourceTree = "<group>";
+		};
+		CD728D89294F601C00DC69FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD728D83294F5E1000DC69FB /* TourModel.swift */,
+				CD728D8E294F6DEE00DC69FB /* NetworkManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD728D8A294F602200DC69FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD728D70294F5DF700DC69FB /* TourListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD728D8D294F6C3600DC69FB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CD728D8B294F6C2E00DC69FB /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CD728D93294F712800DC69FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD728D94294F714B00DC69FB /* TourListCell.swift */,
+				CD728D95294F714B00DC69FB /* TourListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD728D68294F5DF700DC69FB /* K-TourApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD728D80294F5DF800DC69FB /* Build configuration list for PBXNativeTarget "K-TourApp" */;
+			buildPhases = (
+				CD728D65294F5DF700DC69FB /* Sources */,
+				CD728D66294F5DF700DC69FB /* Frameworks */,
+				CD728D67294F5DF700DC69FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "K-TourApp";
+			packageProductDependencies = (
+				CD728D86294F5F7000DC69FB /* Alamofire */,
+				CD728D91294F6F9E00DC69FB /* Kingfisher */,
+			);
+			productName = "K-TourApp";
+			productReference = CD728D69294F5DF700DC69FB /* K-TourApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD728D61294F5DF700DC69FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					CD728D68294F5DF700DC69FB = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = CD728D64294F5DF700DC69FB /* Build configuration list for PBXProject "K-TourApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD728D60294F5DF700DC69FB;
+			packageReferences = (
+				CD728D85294F5F7000DC69FB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CD728D90294F6F9E00DC69FB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = CD728D6A294F5DF700DC69FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD728D68294F5DF700DC69FB /* K-TourApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD728D67294F5DF700DC69FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD728D7C294F5DF800DC69FB /* LaunchScreen.storyboard in Resources */,
+				CD728D79294F5DF800DC69FB /* Assets.xcassets in Resources */,
+				CD728D74294F5DF700DC69FB /* Main.storyboard in Resources */,
+				CD728D97294F714B00DC69FB /* TourListCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD728D65294F5DF700DC69FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD728D71294F5DF700DC69FB /* TourListViewController.swift in Sources */,
+				CD728D6D294F5DF700DC69FB /* AppDelegate.swift in Sources */,
+				CD728D84294F5E1000DC69FB /* TourModel.swift in Sources */,
+				CD728D96294F714B00DC69FB /* TourListCell.swift in Sources */,
+				CD728D8F294F6DEE00DC69FB /* NetworkManager.swift in Sources */,
+				CD728D6F294F5DF700DC69FB /* SceneDelegate.swift in Sources */,
+				CD728D77294F5DF700DC69FB /* K_TourApp.xcdatamodeld in Sources */,
+				CD728D8C294F6C2E00DC69FB /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD728D72294F5DF700DC69FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD728D73294F5DF700DC69FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD728D7A294F5DF800DC69FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD728D7B294F5DF800DC69FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD728D7E294F5DF800DC69FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD728D7F294F5DF800DC69FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD728D81294F5DF800DC69FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846TMZL7WC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "K-TourApp/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jisuKim.K-TourApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD728D82294F5DF800DC69FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846TMZL7WC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "K-TourApp/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jisuKim.K-TourApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD728D64294F5DF700DC69FB /* Build configuration list for PBXProject "K-TourApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD728D7E294F5DF800DC69FB /* Debug */,
+				CD728D7F294F5DF800DC69FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD728D80294F5DF800DC69FB /* Build configuration list for PBXNativeTarget "K-TourApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD728D81294F5DF800DC69FB /* Debug */,
+				CD728D82294F5DF800DC69FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD728D85294F5F7000DC69FB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		CD728D90294F6F9E00DC69FB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD728D86294F5F7000DC69FB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD728D85294F5F7000DC69FB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CD728D91294F6F9E00DC69FB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD728D90294F6F9E00DC69FB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CD728D75294F5DF700DC69FB /* K_TourApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD728D76294F5DF700DC69FB /* K_TourApp.xcdatamodel */,
+			);
+			currentVersion = CD728D76294F5DF700DC69FB /* K_TourApp.xcdatamodel */;
+			path = K_TourApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD728D61294F5DF700DC69FB /* Project object */;
+}
