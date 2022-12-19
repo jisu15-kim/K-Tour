@@ -21,6 +21,8 @@
 		CD728D92294F6F9E00DC69FB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CD728D91294F6F9E00DC69FB /* Kingfisher */; };
 		CD728D96294F714B00DC69FB /* TourListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD728D94294F714B00DC69FB /* TourListCell.swift */; };
 		CD728D97294F714B00DC69FB /* TourListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD728D95294F714B00DC69FB /* TourListCell.xib */; };
+		CDEAFE462950A2DF00AB37CF /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = CDEAFE452950A2DF00AB37CF /* Tabman */; };
+		CDEAFE482950A33200AB37CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAFE472950A33200AB37CF /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,7 @@
 		CD728D8E294F6DEE00DC69FB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CD728D94294F714B00DC69FB /* TourListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListCell.swift; sourceTree = "<group>"; };
 		CD728D95294F714B00DC69FB /* TourListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourListCell.xib; sourceTree = "<group>"; };
+		CDEAFE472950A33200AB37CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 			files = (
 				CD728D92294F6F9E00DC69FB /* Kingfisher in Frameworks */,
 				CD728D87294F5F7000DC69FB /* Alamofire in Frameworks */,
+				CDEAFE462950A2DF00AB37CF /* Tabman in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +95,7 @@
 				CD728D93294F712800DC69FB /* View */,
 				CD728D8A294F602200DC69FB /* Controller */,
 				CD728D72294F5DF700DC69FB /* Main.storyboard */,
+				CDEAFE472950A33200AB37CF /* HomeViewController.swift */,
 			);
 			path = TourList;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			packageProductDependencies = (
 				CD728D86294F5F7000DC69FB /* Alamofire */,
 				CD728D91294F6F9E00DC69FB /* Kingfisher */,
+				CDEAFE452950A2DF00AB37CF /* Tabman */,
 			);
 			productName = "K-TourApp";
 			productReference = CD728D69294F5DF700DC69FB /* K-TourApp.app */;
@@ -180,6 +186,7 @@
 			packageReferences = (
 				CD728D85294F5F7000DC69FB /* XCRemoteSwiftPackageReference "Alamofire" */,
 				CD728D90294F6F9E00DC69FB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				CDEAFE442950A2DF00AB37CF /* XCRemoteSwiftPackageReference "Tabman" */,
 			);
 			productRefGroup = CD728D6A294F5DF700DC69FB /* Products */;
 			projectDirPath = "";
@@ -214,6 +221,7 @@
 				CD728D84294F5E1000DC69FB /* TourModel.swift in Sources */,
 				CD728D96294F714B00DC69FB /* TourListCell.swift in Sources */,
 				CD728D8F294F6DEE00DC69FB /* NetworkManager.swift in Sources */,
+				CDEAFE482950A33200AB37CF /* HomeViewController.swift in Sources */,
 				CD728D6F294F5DF700DC69FB /* SceneDelegate.swift in Sources */,
 				CD728D77294F5DF700DC69FB /* K_TourApp.xcdatamodeld in Sources */,
 				CD728D8C294F6C2E00DC69FB /* Helper.swift in Sources */,
@@ -454,6 +462,14 @@
 				kind = branch;
 			};
 		};
+		CDEAFE442950A2DF00AB37CF /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -466,6 +482,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CD728D90294F6F9E00DC69FB /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		CDEAFE452950A2DF00AB37CF /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDEAFE442950A2DF00AB37CF /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
 		};
 /* End XCSwiftPackageProductDependency section */
 

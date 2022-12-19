@@ -11,6 +11,8 @@ class TourListViewController: UIViewController {
     
     let networkManager = NetworkManager()
     var tourListDatas: [Item] = []
+    var contentType: contentTypeID?
+    var pageNumber = 1
     
     @IBOutlet weak var listTableView: UITableView!
     
@@ -22,10 +24,13 @@ class TourListViewController: UIViewController {
     }
     
     func fetchNetwork() {
-        networkManager.getNetworkData { [weak self] item in
-            self?.tourListDatas = item
-            dump(self?.tourListDatas)
-            self?.listTableView.reloadData()
+        guard let type = contentType else { return }
+        
+        networkManager.getNetworkData(contentType: type, pageNumber: self.pageNumber) { item in
+            item.forEach { item in
+                self.tourListDatas.append(item)
+            }
+            self.listTableView.reloadData()
         }
     }
     
@@ -33,8 +38,7 @@ class TourListViewController: UIViewController {
         listTableView.register(UINib(nibName: "TourListCell", bundle: nil), forCellReuseIdentifier: "TourListCell")
         listTableView.delegate = self
         listTableView.dataSource = self
-        listTableView.rowHeight = 150
-
+        listTableView.rowHeight = 120
     }
 }
 
@@ -50,5 +54,14 @@ extension TourListViewController: UITableViewDelegate, UITableViewDataSource {
         }
         cell.configure()
         return cell
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let contentOffsetY = scrollView.contentOffset.y
+        let tableViewHeight = self.listTableView.contentSize.height
+        if contentOffsetY > tableViewHeight * 0.5 {
+            self.pageNumber += 1
+            fetchNetwork()
+        }
     }
 }
