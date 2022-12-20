@@ -44,9 +44,13 @@ class HomeViewController: TabmanViewController {
         addBar(bar, dataSource: self, at: .top)
         bar.layout.contentInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
         bar.indicator.weight = .medium
+        bar.backgroundView.style = .blur(style: .light)
         bar.indicator.tintColor = #colorLiteral(red: 0.4356632233, green: 0.4757905006, blue: 0.968429029, alpha: 1)
         bar.buttons.customize { button in
             button.selectedTintColor = #colorLiteral(red: 0.4356632233, green: 0.4757905006, blue: 0.968429029, alpha: 1)
+            button.backgroundColor = .clear
+            button.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+            button.selectedFont = UIFont.systemFont(ofSize: 15, weight: .bold)
         }
     }
 }

@@ -14,6 +14,8 @@ class TourListViewController: UIViewController {
     var contentType: contentTypeID?
     var pageNumber = 1
     
+    var isPaging = false
+    
     @IBOutlet weak var listTableView: UITableView!
     
     override func viewDidLoad() {
@@ -23,14 +25,23 @@ class TourListViewController: UIViewController {
         setupTableView()
     }
     
-    func fetchNetwork() {
+    // 페이지네이션 포함 network
+    func fetchNetwork(paging: Bool? = false) {
         guard let type = contentType else { return }
         
-        networkManager.getNetworkData(contentType: type, pageNumber: self.pageNumber) { item in
+        if paging == true {
+            isPaging = true
+            pageNumber += 1
+        }
+        
+        networkManager.getNetworkData(contentType: type, pageNumber: self.pageNumber) { [weak self] item in
             item.forEach { item in
-                self.tourListDatas.append(item)
+                self?.tourListDatas.append(item)
             }
-            self.listTableView.reloadData()
+            self?.listTableView.reloadData()
+            if paging == true {
+                self?.isPaging = false
+            }
         }
     }
     
@@ -57,11 +68,20 @@ extension TourListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let contentOffsetY = scrollView.contentOffset.y
-        let tableViewHeight = self.listTableView.contentSize.height
-        if contentOffsetY > tableViewHeight * 0.5 {
-            self.pageNumber += 1
-            fetchNetwork()
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        let height = scrollView.frame.height
+        
+//        print("offsetY : \(offsetY) / contentHeight : \(contentHeight) / height : \(height)")
+        
+        if offsetY > contentHeight - height {
+            if isPaging == false {
+                fetchNetwork(paging: true)
+            }
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(tourListDatas[indexPath.row].title)
     }
 }
