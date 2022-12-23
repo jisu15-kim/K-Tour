@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (5.6.4)
+  - KakaoSDKAuth (2.13.0):
+    - KakaoSDKCommon (= 2.13.0)
+  - KakaoSDKCommon (2.13.0):
+    - KakaoSDKCommon/Common (= 2.13.0)
+    - KakaoSDKCommon/Network (= 2.13.0)
+  - KakaoSDKCommon/Common (2.13.0)
+  - KakaoSDKCommon/Network (2.13.0):
+    - Alamofire (~> 5.1)
+    - KakaoSDKCommon/Common (= 2.13.0)
+  - KakaoSDKUser (2.13.0):
+    - KakaoSDKAuth (= 2.13.0)
+  - NMapsGeometry (1.0.1)
+  - NMapsMap (3.16.1):
+    - NMapsGeometry
+
+DEPENDENCIES:
+  - KakaoSDKAuth
+  - KakaoSDKCommon
+  - KakaoSDKUser
+  - NMapsMap
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KakaoSDKAuth
+    - KakaoSDKCommon
+    - KakaoSDKUser
+    - NMapsGeometry
+    - NMapsMap
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  KakaoSDKAuth: 59b694eb81dda10a971beba64bb5842dcb985c81
+  KakaoSDKCommon: 74c422d32200032e4e57f70e065e221296bced71
+  KakaoSDKUser: 7c2d98fc54f744da4784b554a383ada548fed0e5
+  NMapsGeometry: 53c573ead66466681cf123f99f698dc8071a4b83
+  NMapsMap: 926c3a303d381a24bec8da3cd6e198f50af93ae9
+
+PODFILE CHECKSUM: 68651922c68e95907706bc32faa559d42cf8606d
+
+COCOAPODS: 1.11.3

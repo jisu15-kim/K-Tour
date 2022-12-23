@@ -21,12 +21,24 @@ enum contentTypeID: Int {
 struct Helper {
     private let key = "O%2FG920ZjfGIFYshoBYqghwh3hF22e6g9KOcQj6T2D1eAw6LqO18gKbSGOTmmvhyaVPkiQmnh3qQfhMNvU3A4YQ%3D%3D"
     private let url = ""
-    private let domain = "http://apis.data.go.kr/B551011/KorService/areaBasedList?"
+    private let listViewDomain = "areaBasedList?"
+    private let commonDataDomain = "detailCommon?"
     private var numOfRows = 20
     private var areaCode = 1
     
-    public func getURL(contentType: contentTypeID, pageNumber: Int) -> String {
-        let url = "\(domain)pageNo=\(pageNumber)&numOfRows=\(numOfRows)&serviceKey=\(key)&MobileApp=k-tour&MobileOS=IOS&arrange=Q&contentTypeId=\(contentType.rawValue)&areaCode=\(areaCode)&_type=json"
+    public func getListViewURL(contentType: contentTypeID, pageNumber: Int) -> String {
+        let url = "http://apis.data.go.kr/B551011/KorService/\(listViewDomain)pageNo=\(pageNumber)&numOfRows=\(numOfRows)&serviceKey=\(key)&MobileApp=k-tour&MobileOS=IOS&arrange=Q&contentTypeId=\(contentType.rawValue)&areaCode=\(areaCode)&_type=json"
+        return url
+    }
+    
+    public func getCommonDataURL(contentID: String) -> String {
+        let url = "http://apis.data.go.kr/B551011/KorService/\(commonDataDomain)pageNo=1&numOfRows=10&serviceKey=\(key)&numOfRows=10&pageNo=1&MobileOS=iOS&MobileApp=k-tour&contentId=\(contentID)&defaultYN=Y&_type=json&overviewYN=Y&addrinfoYN=Y&mapinfoYN=Y&firstImageYN=Y"
+        return url
+    }
+    
+    public func getFestaDataURL(date: String) -> String {
+        let url = "http://apis.data.go.kr/B551011/KorService/searchFestival?serviceKey=\(key)&numOfRows=10&pageNo=1&MobileOS=iOS&MobileApp=k-tour&arrange=Q&listYN=Y&eventStartDate=\(date)&_type=json"
+        print(url)
         return url
     }
 }

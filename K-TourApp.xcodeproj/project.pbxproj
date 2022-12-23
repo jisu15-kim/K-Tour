@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0D686B2951F62C00EDA49A /* CommonDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D686A2951F62C00EDA49A /* CommonDetailModel.swift */; };
+		CD0D686D2951F69100EDA49A /* CommonDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D686C2951F69100EDA49A /* CommonDetailDataManager.swift */; };
+		CD32F10B29540DBF00551EE8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD32F10A29540DBF00551EE8 /* MapViewController.swift */; };
 		CD728D6D294F5DF700DC69FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD728D6C294F5DF700DC69FB /* AppDelegate.swift */; };
 		CD728D6F294F5DF700DC69FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD728D6E294F5DF700DC69FB /* SceneDelegate.swift */; };
 		CD728D71294F5DF700DC69FB /* TourListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD728D70294F5DF700DC69FB /* TourListViewController.swift */; };
@@ -21,11 +24,26 @@
 		CD728D92294F6F9E00DC69FB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CD728D91294F6F9E00DC69FB /* Kingfisher */; };
 		CD728D96294F714B00DC69FB /* TourListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD728D94294F714B00DC69FB /* TourListCell.swift */; };
 		CD728D97294F714B00DC69FB /* TourListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD728D95294F714B00DC69FB /* TourListCell.xib */; };
+		CD9C0FE12954382B0024B812 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9C0FE02954382B0024B812 /* SignInViewController.swift */; };
+		CDB37263295440E9003868C2 /* MyTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37262295440E9003868C2 /* MyTourViewController.swift */; };
+		CDB372662955BAF1003868C2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB372652955BAF1003868C2 /* Extension.swift */; };
+		CDB3726C2955BBC4003868C2 /* FestaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3726B2955BBC4003868C2 /* FestaViewController.swift */; };
+		CDB3726E2955BDE2003868C2 /* FestaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3726D2955BDE2003868C2 /* FestaModel.swift */; };
+		CDB372712955BFB5003868C2 /* HotFestaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3726F2955BFB5003868C2 /* HotFestaCell.swift */; };
+		CDB372742955C1E8003868C2 /* FestaDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB372732955C1E8003868C2 /* FestaDataManager.swift */; };
 		CDEAFE462950A2DF00AB37CF /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = CDEAFE452950A2DF00AB37CF /* Tabman */; };
 		CDEAFE482950A33200AB37CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAFE472950A33200AB37CF /* HomeViewController.swift */; };
+		CDEAFE502951F24D00AB37CF /* CommonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAFE4F2951F24D00AB37CF /* CommonDetailViewController.swift */; };
+		E6405AA8EF03B898ED93CAF4 /* Pods_K_TourApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B2762B7660634E215342C5 /* Pods_K_TourApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47B2762B7660634E215342C5 /* Pods_K_TourApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_TourApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		704EBD63395651B19AB485F5 /* Pods-K-TourApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-TourApp.release.xcconfig"; path = "Target Support Files/Pods-K-TourApp/Pods-K-TourApp.release.xcconfig"; sourceTree = "<group>"; };
+		C822BB8FDF4FAACD6B3CE287 /* Pods-K-TourApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-TourApp.debug.xcconfig"; path = "Target Support Files/Pods-K-TourApp/Pods-K-TourApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CD0D686A2951F62C00EDA49A /* CommonDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDetailModel.swift; sourceTree = "<group>"; };
+		CD0D686C2951F69100EDA49A /* CommonDetailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDetailDataManager.swift; sourceTree = "<group>"; };
+		CD32F10A29540DBF00551EE8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CD728D69294F5DF700DC69FB /* K-TourApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "K-TourApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD728D6C294F5DF700DC69FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD728D6E294F5DF700DC69FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +58,15 @@
 		CD728D8E294F6DEE00DC69FB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CD728D94294F714B00DC69FB /* TourListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListCell.swift; sourceTree = "<group>"; };
 		CD728D95294F714B00DC69FB /* TourListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourListCell.xib; sourceTree = "<group>"; };
+		CD9C0FE02954382B0024B812 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CDB37262295440E9003868C2 /* MyTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTourViewController.swift; sourceTree = "<group>"; };
+		CDB372652955BAF1003868C2 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CDB3726B2955BBC4003868C2 /* FestaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestaViewController.swift; sourceTree = "<group>"; };
+		CDB3726D2955BDE2003868C2 /* FestaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestaModel.swift; sourceTree = "<group>"; };
+		CDB3726F2955BFB5003868C2 /* HotFestaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HotFestaCell.swift; path = "K-TourApp/K-Festa/Model/HotFestaCell.swift"; sourceTree = SOURCE_ROOT; };
+		CDB372732955C1E8003868C2 /* FestaDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestaDataManager.swift; sourceTree = "<group>"; };
 		CDEAFE472950A33200AB37CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CDEAFE4F2951F24D00AB37CF /* CommonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +77,69 @@
 				CD728D92294F6F9E00DC69FB /* Kingfisher in Frameworks */,
 				CD728D87294F5F7000DC69FB /* Alamofire in Frameworks */,
 				CDEAFE462950A2DF00AB37CF /* Tabman in Frameworks */,
+				E6405AA8EF03B898ED93CAF4 /* Pods_K_TourApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05345B34A26D29DDA57914AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C822BB8FDF4FAACD6B3CE287 /* Pods-K-TourApp.debug.xcconfig */,
+				704EBD63395651B19AB485F5 /* Pods-K-TourApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4D8B4C2DBE5C09276986539B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47B2762B7660634E215342C5 /* Pods_K_TourApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD32F10629540D9900551EE8 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				CD32F10929540DAB00551EE8 /* Model */,
+				CD32F10829540DA800551EE8 /* View */,
+				CD32F10729540DA400551EE8 /* Controller */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		CD32F10729540DA400551EE8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD32F10A29540DBF00551EE8 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD32F10829540DA800551EE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD32F10929540DAB00551EE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CD728D60294F5DF700DC69FB = {
 			isa = PBXGroup;
 			children = (
 				CD728D6B294F5DF700DC69FB /* K-TourApp */,
 				CD728D6A294F5DF700DC69FB /* Products */,
+				05345B34A26D29DDA57914AD /* Pods */,
+				4D8B4C2DBE5C09276986539B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,10 +154,16 @@
 		CD728D6B294F5DF700DC69FB /* K-TourApp */ = {
 			isa = PBXGroup;
 			children = (
+				CDB372642955BAE3003868C2 /* Extension */,
 				CD728D8D294F6C3600DC69FB /* Helper */,
-				CD728D6C294F5DF700DC69FB /* AppDelegate.swift */,
-				CD728D6E294F5DF700DC69FB /* SceneDelegate.swift */,
+				CDEAFE492951F1F800AB37CF /* Delegate */,
+				CD728D72294F5DF700DC69FB /* Main.storyboard */,
+				CDB372672955BB90003868C2 /* K-Festa */,
+				CD9C0FDF295438100024B812 /* SignIn */,
 				CD728D88294F5FE400DC69FB /* TourList */,
+				CDEAFE4A2951F20300AB37CF /* DetailView */,
+				CD32F10629540D9900551EE8 /* MapView */,
+				CDB3725E295440C7003868C2 /* MyTour */,
 				CD728D78294F5DF800DC69FB /* Assets.xcassets */,
 				CD728D7A294F5DF800DC69FB /* LaunchScreen.storyboard */,
 				CD728D7D294F5DF800DC69FB /* Info.plist */,
@@ -94,8 +178,6 @@
 				CD728D89294F601C00DC69FB /* Model */,
 				CD728D93294F712800DC69FB /* View */,
 				CD728D8A294F602200DC69FB /* Controller */,
-				CD728D72294F5DF700DC69FB /* Main.storyboard */,
-				CDEAFE472950A33200AB37CF /* HomeViewController.swift */,
 			);
 			path = TourList;
 			sourceTree = "<group>";
@@ -112,6 +194,7 @@
 		CD728D8A294F602200DC69FB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CDEAFE472950A33200AB37CF /* HomeViewController.swift */,
 				CD728D70294F5DF700DC69FB /* TourListViewController.swift */,
 			);
 			path = Controller;
@@ -134,6 +217,157 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CD9C0FDF295438100024B812 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				CD9C0FE4295438350024B812 /* Model */,
+				CD9C0FE3295438310024B812 /* View */,
+				CD9C0FE22954382F0024B812 /* Controller */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		CD9C0FE22954382F0024B812 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD9C0FE02954382B0024B812 /* SignInViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD9C0FE3295438310024B812 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD9C0FE4295438350024B812 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDB3725E295440C7003868C2 /* MyTour */ = {
+			isa = PBXGroup;
+			children = (
+				CDB37261295440DA003868C2 /* Model */,
+				CDB37260295440D8003868C2 /* View */,
+				CDB3725F295440D4003868C2 /* Controller */,
+			);
+			path = MyTour;
+			sourceTree = "<group>";
+		};
+		CDB3725F295440D4003868C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDB37262295440E9003868C2 /* MyTourViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CDB37260295440D8003868C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDB37261295440DA003868C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDB372642955BAE3003868C2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CDB372652955BAF1003868C2 /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CDB372672955BB90003868C2 /* K-Festa */ = {
+			isa = PBXGroup;
+			children = (
+				CDB3726A2955BBB2003868C2 /* Model */,
+				CDB372692955BBB0003868C2 /* View */,
+				CDB372682955BBAE003868C2 /* Controller */,
+			);
+			path = "K-Festa";
+			sourceTree = "<group>";
+		};
+		CDB372682955BBAE003868C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDB3726B2955BBC4003868C2 /* FestaViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CDB372692955BBB0003868C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDB3726F2955BFB5003868C2 /* HotFestaCell.swift */,
+			);
+			name = View;
+			path = "New Group/View";
+			sourceTree = "<group>";
+		};
+		CDB3726A2955BBB2003868C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDB3726D2955BDE2003868C2 /* FestaModel.swift */,
+				CDB372732955C1E8003868C2 /* FestaDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDEAFE492951F1F800AB37CF /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CD728D6C294F5DF700DC69FB /* AppDelegate.swift */,
+				CD728D6E294F5DF700DC69FB /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		CDEAFE4A2951F20300AB37CF /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				CDEAFE4C2951F21700AB37CF /* Model */,
+				CDEAFE4E2951F23500AB37CF /* View */,
+				CDEAFE4B2951F21500AB37CF /* Controller */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		CDEAFE4B2951F21500AB37CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDEAFE4F2951F24D00AB37CF /* CommonDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CDEAFE4C2951F21700AB37CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD0D686A2951F62C00EDA49A /* CommonDetailModel.swift */,
+				CD0D686C2951F69100EDA49A /* CommonDetailDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDEAFE4E2951F23500AB37CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +375,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD728D80294F5DF800DC69FB /* Build configuration list for PBXNativeTarget "K-TourApp" */;
 			buildPhases = (
+				FB80AA7D592CA8B0A93D13C7 /* [CP] Check Pods Manifest.lock */,
 				CD728D65294F5DF700DC69FB /* Sources */,
 				CD728D66294F5DF700DC69FB /* Frameworks */,
 				CD728D67294F5DF700DC69FB /* Resources */,
+				B6D96238F08030501A9DECAF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,18 +447,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B6D96238F08030501A9DECAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K-TourApp/Pods-K-TourApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-K-TourApp/Pods-K-TourApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-K-TourApp/Pods-K-TourApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB80AA7D592CA8B0A93D13C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-K-TourApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD728D65294F5DF700DC69FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9C0FE12954382B0024B812 /* SignInViewController.swift in Sources */,
 				CD728D71294F5DF700DC69FB /* TourListViewController.swift in Sources */,
 				CD728D6D294F5DF700DC69FB /* AppDelegate.swift in Sources */,
 				CD728D84294F5E1000DC69FB /* TourModel.swift in Sources */,
 				CD728D96294F714B00DC69FB /* TourListCell.swift in Sources */,
+				CDB372712955BFB5003868C2 /* HotFestaCell.swift in Sources */,
 				CD728D8F294F6DEE00DC69FB /* NetworkManager.swift in Sources */,
+				CD0D686D2951F69100EDA49A /* CommonDetailDataManager.swift in Sources */,
+				CDB372662955BAF1003868C2 /* Extension.swift in Sources */,
+				CD32F10B29540DBF00551EE8 /* MapViewController.swift in Sources */,
+				CDB3726E2955BDE2003868C2 /* FestaModel.swift in Sources */,
 				CDEAFE482950A33200AB37CF /* HomeViewController.swift in Sources */,
+				CDEAFE502951F24D00AB37CF /* CommonDetailViewController.swift in Sources */,
+				CDB372742955C1E8003868C2 /* FestaDataManager.swift in Sources */,
+				CDB37263295440E9003868C2 /* MyTourViewController.swift in Sources */,
 				CD728D6F294F5DF700DC69FB /* SceneDelegate.swift in Sources */,
+				CD0D686B2951F62C00EDA49A /* CommonDetailModel.swift in Sources */,
+				CDB3726C2955BBC4003868C2 /* FestaViewController.swift in Sources */,
 				CD728D77294F5DF700DC69FB /* K_TourApp.xcdatamodeld in Sources */,
 				CD728D8C294F6C2E00DC69FB /* Helper.swift in Sources */,
 			);
@@ -366,6 +655,7 @@
 		};
 		CD728D81294F5DF800DC69FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C822BB8FDF4FAACD6B3CE287 /* Pods-K-TourApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -395,6 +685,7 @@
 		};
 		CD728D82294F5DF800DC69FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704EBD63395651B19AB485F5 /* Pods-K-TourApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

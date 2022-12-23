@@ -13,7 +13,7 @@ class NetworkManager {
     var models: [Item] = []
     
     func getNetworkData(contentType: contentTypeID, pageNumber: Int, completion: @escaping ([Item]) -> Void) {
-        AF.request(Helper().getURL(contentType: contentType, pageNumber: pageNumber))
+        AF.request(Helper().getListViewURL(contentType: contentType, pageNumber: pageNumber))
             .responseDecodable(of: TourModel.self) { response in
                 switch response.result {
                 case .success(let response):

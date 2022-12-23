@@ -82,6 +82,11 @@ extension TourListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(tourListDatas[indexPath.row].title)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "CommonDetailViewController") as! CommonDetailViewController
+        let cell = tableView.cellForRow(at: indexPath) as! TourListCell
+        
+        vc.listItem = cell.model
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
