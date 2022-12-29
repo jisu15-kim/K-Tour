@@ -35,7 +35,7 @@ class SignInViewController: UIViewController {
                     print(error)
                 } else {
                     print("카카오톡 로그인 성공")
-                    _ = oauthToken
+                    print("/////////////////////oauthToken: \(oauthToken)")
                     self?.viewTransition()
                 }
             }
