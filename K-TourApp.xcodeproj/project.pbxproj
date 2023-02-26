@@ -25,6 +25,7 @@
 		CD728D96294F714B00DC69FB /* TourListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD728D94294F714B00DC69FB /* TourListCell.swift */; };
 		CD728D97294F714B00DC69FB /* TourListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD728D95294F714B00DC69FB /* TourListCell.xib */; };
 		CD9C0FE12954382B0024B812 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9C0FE02954382B0024B812 /* SignInViewController.swift */; };
+		CDB1EB0A29ABDFDF004D474A /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB1EB0929ABDFDF004D474A /* Secret.swift */; };
 		CDB37263295440E9003868C2 /* MyTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB37262295440E9003868C2 /* MyTourViewController.swift */; };
 		CDB372662955BAF1003868C2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB372652955BAF1003868C2 /* Extension.swift */; };
 		CDB3726C2955BBC4003868C2 /* FestaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3726B2955BBC4003868C2 /* FestaViewController.swift */; };
@@ -59,6 +60,7 @@
 		CD728D94294F714B00DC69FB /* TourListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListCell.swift; sourceTree = "<group>"; };
 		CD728D95294F714B00DC69FB /* TourListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourListCell.xib; sourceTree = "<group>"; };
 		CD9C0FE02954382B0024B812 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CDB1EB0929ABDFDF004D474A /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		CDB37262295440E9003868C2 /* MyTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTourViewController.swift; sourceTree = "<group>"; };
 		CDB372652955BAF1003868C2 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CDB3726B2955BBC4003868C2 /* FestaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestaViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		CD728D6B294F5DF700DC69FB /* K-TourApp */ = {
 			isa = PBXGroup;
 			children = (
+				CDB1EB0829ABDFD0004D474A /* Secret */,
 				CDB372642955BAE3003868C2 /* Extension */,
 				CD728D8D294F6C3600DC69FB /* Helper */,
 				CDEAFE492951F1F800AB37CF /* Delegate */,
@@ -247,6 +250,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CDB1EB0829ABDFD0004D474A /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				CDB1EB0929ABDFDF004D474A /* Secret.swift */,
+			);
+			path = Secret;
 			sourceTree = "<group>";
 		};
 		CDB3725E295440C7003868C2 /* MyTour */ = {
@@ -495,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD9C0FE12954382B0024B812 /* SignInViewController.swift in Sources */,
+				CDB1EB0A29ABDFDF004D474A /* Secret.swift in Sources */,
 				CD728D71294F5DF700DC69FB /* TourListViewController.swift in Sources */,
 				CD728D6D294F5DF700DC69FB /* AppDelegate.swift in Sources */,
 				CD728D84294F5E1000DC69FB /* TourModel.swift in Sources */,
